@@ -6,5 +6,5 @@ from run import *
 def main():
     parser = create_parser()
     args = parser.parse_args()
-    validator_main(args)
+    args.func(args)
 

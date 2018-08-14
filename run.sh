@@ -36,5 +36,5 @@ docker run -it \
   -v ${OUTPUT_DIR}:/local/output \
   -v ${REFERENCE_DIR}:/local/reference \
   -w /local \
-  ${IMAGE_NAME} tavv /local/input/$INPUT_BASE /local/output /local/reference/$REFERENCE_BASE
+  ${IMAGE_NAME} tavv all /local/input/$INPUT_BASE /local/output /local/reference/$REFERENCE_BASE
 
