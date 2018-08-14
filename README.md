@@ -1,4 +1,4 @@
-# three-arrowed-vcf-validator-
+# three-arrowed-vcf-validator
 Python tools for validating vcf file
 
 ## Quick Start
