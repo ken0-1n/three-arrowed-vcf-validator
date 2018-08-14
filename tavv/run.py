@@ -29,8 +29,8 @@ def validator_main(args):
     stderr_f.close()
 
     print "-------gatk ValidateVariants--------"
-    commands = ["gatk","ValidateVariants","-R", args.reference, "-V", args.input_vcf, "--validation-type-to-exclude ALLELES"]
-    # commands = ["/home/ec2-user/environment/tools/gatk-4.0.7.0/gatk", "-R", args.reference, "-V", args.input_vcf, "--validation-type-to-exclude ALLELES"]
+    commands = ["gatk","ValidateVariants","-R", args.reference, "-V", args.input_vcf, "--validation-type-to-exclude","ALLELES"]
+    # commands = ["/home/ec2-user/environment/tools/gatk-4.0.7.0/gatk","ValidateVariants", "-R", args.reference, "-V", args.input_vcf, "--validation-type-to-exclude ALLELES"]
     stdout_f = open(args.output +"/"+basename+".gatk-validatevariants.stdout."+dt+".txt", 'w')
     stderr_f = open(args.output +"/"+basename+".gatk-validatevariants.stderr."+dt+".txt", 'w')
     subprocess.Popen(commands, stdout=stdout_f, stderr=stderr_f)
