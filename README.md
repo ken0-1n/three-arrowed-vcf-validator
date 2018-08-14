@@ -7,7 +7,7 @@ docker build -t three_arrowed_vcf_validator .
 bash run.sh ${Input VCF} ${Output Directory} ${Reference Genome}
 ```
 
-## Test Input VCF
+## Test Input
 ```
 # contain the REF Error
 test/5929.fisher_comp_result.ref_error.vcf.gz 
